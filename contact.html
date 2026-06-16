@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact | The Bank of Arts™</title>
+<meta name="description" content="Begin a confidential conversation with Bo Arts LLC. Independent advisory for galleries, collectors, and cultural enterprises." />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='10' y='10' width='80' height='80' fill='none' stroke='%23C6A65A' stroke-width='4' rx='2'/><rect x='20' y='20' width='60' height='60' fill='none' stroke='%23FFD700' stroke-width='2'/><circle cx='50' cy='50' r='15' fill='%230a192f'/></svg>" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="preview-banner">PREVIEW · WORK IN PROGRESS — staging only, not the live site. Content is under review.</div>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="brand"><span class="mark"></span> The Bank of Arts<span class="gold" style="font-size:.7rem;vertical-align:super">™</span></a>
+    <nav class="nav-links">
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="insights.html">Insights</a>
+      <a href="disclosures.html">Disclosures</a>
+      <a href="contact.html" class="nav-cta">Begin a Conversation</a>
+    </nav>
+    <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('.nav-links').style.display='flex';this.style.display='none'">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h1>Begin a Conversation</h1>
+    <p>We invite galleries, collectors, and cultural enterprises to explore how independent advisory can serve your objectives. Every inquiry is held in confidence.</p>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow">Reach Us Directly</span>
+      <h2 style="margin:12px 0 18px">Speak With an Advisor</h2>
+      <p>Prefer email? Write to us and we will respond promptly and in confidence.</p>
+      <p style="margin-top:18px"><strong class="gold">Email</strong><br><a href="mailto:advisory@thebankofarts.com" style="color:var(--ink)">advisory@thebankofarts.com</a></p>
+      <p><strong class="gold">Office</strong><br>Bo Arts LLC · 99 Wall Street, New York, NY 10005</p>
+      <div class="offices"><span>New York</span></div>
+    </div>
+    <div>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+        <label for="type">I am a…</label>
+        <select id="type" name="type">
+          <option>Gallery or dealer</option>
+          <option>Collector or family office</option>
+          <option>Cultural enterprise / foundation</option>
+          <option>Other</option>
+        </select>
+        <label for="msg">How can we help?</label>
+        <textarea id="msg" name="msg" rows="5"></textarea>
+        <button class="btn btn-primary" style="margin-top:22px;width:100%" type="submit">Send Inquiry</button>
+        <p class="formnote muted" style="margin-top:14px;font-size:.82rem">Your inquiry opens in your email app, addressed to advisory@thebankofarts.com. Nothing is stored on this preview.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a href="index.html" class="brand" style="margin-bottom:14px"><span class="mark"></span> The Bank of Arts™</a><p style="margin-top:12px;max-width:340px">Independent financial and strategic advisory for the business of art. A brand of Bo Arts LLC.</p></div>
+      <div><h4>Navigate</h4><a href="services.html">Services</a><a href="about.html">About</a><a href="insights.html">Insights</a><a href="disclosures.html">Disclosures</a><a href="contact.html">Contact</a></div>
+      <div><h4>Contact</h4><p>Bo Arts LLC</p><p>99 Wall Street</p><p>New York, NY 10005</p><a href="mailto:advisory@thebankofarts.com">advisory@thebankofarts.com</a></div>
+    </div>
+    <div class="legal"><strong style="color:var(--gold-bright)">Legal Notice.</strong> THE BANK OF ARTS™ is a pending service mark of Bo Arts LLC. Bo Arts LLC is not a bank or depository institution and does not accept deposits. The content of this site is informational only and is not an offer, solicitation, or recommendation to buy or sell any security or to engage any service. See our <a href="disclosures.html" style="display:inline;color:var(--gold)">Disclosures</a>.</div>
+    <div class="copyright"><span>© 2026 Bo Arts LLC. All rights reserved.</span><span><a href="/privacy" style="display:inline">Privacy Policy</a> · <a href="/terms" style="display:inline">Terms of Service</a></span></div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('name').value || '';
+    var email = document.getElementById('email').value || '';
+    var type = document.getElementById('type').value || '';
+    var msg = document.getElementById('msg').value || '';
+    var subject = 'Website inquiry from ' + name;
+    var body = 'Name: ' + name + '\r\nEmail: ' + email + '\r\nType: ' + type + '\r\n\r\n' + msg;
+    window.location.href = 'mailto:advisory@thebankofarts.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
