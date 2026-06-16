@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Bank of Arts™ | Advisory for the Business of Art</title>
+<meta name="description" content="Bo Arts LLC provides independent financial and strategic advisory to galleries, collectors, and cultural enterprises. Art M&A, capital raising, and collection strategy." />
+<meta name="keywords" content="art finance advisory, gallery M&A, art-secured lending, collection advisory, cultural finance, art investment advisory" />
+<meta name="author" content="Bo Arts LLC" />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="canonical" href="https://thebankofarts.com/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="The Bank of Arts™ | Advisory for the Business of Art" />
+<meta property="og:description" content="Independent financial and strategic advisory for galleries, collectors, and cultural enterprises." />
+<meta property="og:url" content="https://thebankofarts.com/" />
+<meta property="og:site_name" content="The Bank of Arts" />
+<meta property="og:image" content="https://thebankofarts.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The Bank of Arts™ | Advisory for the Business of Art" />
+<meta name="twitter:description" content="Independent financial and strategic advisory for galleries, collectors, and cultural enterprises." />
+<meta name="twitter:image" content="https://thebankofarts.com/og-image.jpg" />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='10' y='10' width='80' height='80' fill='none' stroke='%23C6A65A' stroke-width='4' rx='2'/><rect x='20' y='20' width='60' height='60' fill='none' stroke='%23FFD700' stroke-width='2'/><circle cx='50' cy='50' r='15' fill='%230a192f'/></svg>" />
+
+<!-- JSON-LD structured data for credibility & SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "The Bank of Arts (Bo Arts LLC)",
+  "alternateName": "The Bank of Arts",
+  "description": "Independent financial and strategic advisory for the business of art: galleries, collectors, and cultural enterprises.",
+  "url": "https://thebankofarts.com",
+  "email": "advisory@thebankofarts.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "99 Wall Street",
+    "addressLocality": "New York",
+    "addressRegion": "NY",
+    "postalCode": "10005",
+    "addressCountry": "US"
+  },
+  "areaServed": "Global",
+  "disambiguatingDescription": "Bo Arts LLC is an independent advisory firm. It is not a bank or depository institution and does not accept deposits."
+}
+</script>
+
+<style>
+  :root{
+    --navy:#0a192f;
+    --navy-2:#0f2440;
+    --navy-3:#13294b;
+    --gold:#c6a65a;
+    --gold-bright:#e8c878;
+    --ink:#e9eef6;
+    --muted:#9fb0c8;
+    --line:rgba(198,166,90,.22);
+    --maxw:1140px;
+    --serif:"Georgia","Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--navy);
+    color:var(--ink);
+    font-family:var(--sans);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  .eyebrow{
+    font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--gold);font-weight:600;
+  }
+  h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.2}
+  section{padding:96px 0}
+  .gold{color:var(--gold)}
+
+  header.nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(10,25,47,.86);backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .brand{display:flex;align-items:center;gap:12px;font-family:var(--serif);font-size:1.15rem;letter-spacing:.02em}
+  .brand .mark{width:26px;height:26px;border:2px solid var(--gold);border-radius:3px;position:relative;flex:none}
+  .brand .mark::after{content:"";position:absolute;inset:5px;border:1px solid var(--gold-bright);border-radius:1px}
+  .nav-links{display:flex;gap:34px;align-items:center;font-size:.9rem}
+  .nav-links a{color:var(--muted);transition:color .2s}
+  .nav-links a:hover{color:var(--gold)}
+  .nav-cta{
+    border:1px solid var(--gold);color:var(--gold)!important;
+    padding:9px 18px;border-radius:2px;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;
+    transition:all .2s;
+  }
+  .nav-cta:hover{background:var(--gold);color:var(--navy)!important}
+  .menu-btn{display:none;background:none;border:0;color:var(--gold);font-size:1.5rem;cursor:pointer}
+
+  .hero{
+    position:relative;
+    background:
+      linear-gradient(180deg,rgba(10,25,47,.72),rgba(10,25,47,.96)),
+      radial-gradient(1200px 600px at 70% -10%,rgba(198,166,90,.14),transparent 60%);
+    padding:120px 0 90px;
+    border-bottom:1px solid var(--line);
+    overflow:hidden;
+  }
+  .hero .cities{font-size:.74rem;letter-spacing:.28em;color:var(--muted);text-transform:uppercase;margin-bottom:26px}
+  .hero h1{font-size:clamp(2.6rem,6vw,4.4rem);letter-spacing:.01em}
+  .hero h1 .sub{display:block;color:var(--gold);font-style:italic;font-size:.62em;margin-top:6px}
+  .hero .lede{max-width:620px;color:var(--muted);font-size:1.12rem;margin:26px 0 8px}
+  .hero .lede.small{font-size:1rem;margin-top:14px}
+  .diamond{color:var(--gold);font-size:.8rem;margin:30px 0 22px}
+  .cta-row{display:flex;gap:16px;flex-wrap:wrap;margin-top:34px}
+  .btn{
+    display:inline-block;padding:14px 28px;border-radius:2px;font-size:.86rem;
+    letter-spacing:.08em;text-transform:uppercase;transition:all .2s;cursor:pointer;border:1px solid var(--gold);
+  }
+  .btn-primary{background:var(--gold);color:var(--navy);font-weight:600}
+  .btn-primary:hover{background:var(--gold-bright);transform:translateY(-1px)}
+  .btn-ghost{color:var(--gold)}
+  .btn-ghost:hover{background:rgba(198,166,90,.1)}
+
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+  .pillar{background:var(--navy-2);padding:40px 32px}
+  .pillar h3{font-size:1.35rem;color:var(--gold);margin-bottom:12px}
+  .pillar p{color:var(--muted);font-size:.96rem}
+
+  .section-head{text-align:center;max-width:680px;margin:0 auto 60px}
+  .section-head h2{font-size:clamp(1.9rem,4vw,2.7rem);margin:14px 0}
+  .section-head p{color:var(--muted)}
+
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .svc{
+    background:var(--navy-2);border:1px solid var(--line);padding:34px 28px;border-radius:3px;
+    transition:transform .2s,border-color .2s;
+  }
+  .svc:hover{transform:translateY(-4px);border-color:var(--gold)}
+  .svc .num{font-family:var(--serif);color:var(--gold);font-size:1.3rem;opacity:.7}
+  .svc h3{font-size:1.22rem;margin:14px 0 10px}
+  .svc p{color:var(--muted);font-size:.93rem}
+
+  .process{background:var(--navy-2)}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:step}
+  .step{padding:28px 22px;border-top:2px solid var(--gold)}
+  .step .n{font-family:var(--serif);font-size:2rem;color:var(--gold)}
+  .step h3{font-size:1.1rem;margin:8px 0}
+  .step p{color:var(--muted);font-size:.9rem}
+
+  .serve-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .serve{border:1px solid var(--line);border-radius:3px;padding:30px 26px;background:linear-gradient(180deg,var(--navy-2),var(--navy))}
+  .serve h3{color:var(--gold);font-size:1.2rem;margin-bottom:10px}
+  .serve p{color:var(--muted);font-size:.93rem}
+
+  .about{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+  .about h2{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:18px}
+  .about p{color:var(--muted);margin-bottom:16px}
+  .about .stats{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:30px}
+  .stat .big{font-family:var(--serif);font-size:2.2rem;color:var(--gold)}
+  .stat .lbl{color:var(--muted);font-size:.84rem;letter-spacing:.04em}
+
+  .insights-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .post{background:var(--navy-2);border:1px solid var(--line);border-radius:3px;padding:30px 26px;transition:border-color .2s}
+  .post:hover{border-color:var(--gold)}
+  .post .tag{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+  .post h3{font-size:1.18rem;margin:12px 0}
+  .post p{color:var(--muted);font-size:.92rem}
+  .post .meta{margin-top:16px;font-size:.8rem;color:var(--muted)}
+
+  details{border-bottom:1px solid var(--line);padding:20px 0}
+  details summary{cursor:pointer;font-family:var(--serif);font-size:1.15rem;list-style:none;display:flex;justify-content:space-between;align-items:center}
+  details summary::-webkit-details-marker{display:none}
+  details summary::after{content:"+";color:var(--gold);font-size:1.4rem}
+  details[open] summary::after{content:"–"}
+  details p{color:var(--muted);margin-top:14px;max-width:760px}
+
+  .contact{background:var(--navy-2)}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+  .contact h2{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:16px}
+  .contact p{color:var(--muted);margin-bottom:10px}
+  form label{display:block;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:18px 0 6px}
+  form input,form textarea,form select{
+    width:100%;background:var(--navy);border:1px solid var(--line);color:var(--ink);
+    padding:12px 14px;border-radius:3px;font-family:inherit;font-size:.95rem;
+  }
+  form input:focus,form textarea:focus,form select:focus{outline:none;border-color:var(--gold)}
+  .offices{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+  .offices span{font-size:.85rem;color:var(--muted);border:1px solid var(--line);padding:6px 12px;border-radius:2px}
+
+  footer{border-top:1px solid var(--line);padding:54px 0 40px;background:var(--navy)}
+  .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:36px}
+  footer h4{color:var(--gold);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px}
+  footer p,footer a{color:var(--muted);font-size:.88rem;display:block;margin-bottom:6px}
+  footer a:hover{color:var(--gold)}
+  .legal{border-top:1px solid var(--line);padding-top:24px;font-size:.78rem;color:var(--muted);line-height:1.7}
+  .copyright{margin-top:20px;font-size:.8rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+  @media(max-width:880px){
+    .nav-links{display:none}
+    .menu-btn{display:block}
+    .pillars,.svc-grid,.steps,.serve-grid,.insights-grid{grid-template-columns:1fr}
+    .about,.contact-grid{grid-template-columns:1fr;gap:36px}
+    section{padding:64px 0}
+  }
+</style>
+</head>
+<body>
+<div style="background:#c6a65a;color:#0a192f;font:600 13px/1.4 -apple-system,Segoe UI,Roboto,Arial,sans-serif;text-align:center;padding:8px 14px;letter-spacing:.04em;">
+  PREVIEW · WORK IN PROGRESS — staging only, not the live site. Content is under review.
+</div>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand"><span class="mark"></span> The Bank of Arts<span class="gold" style="font-size:.7rem;vertical-align:super">™</span></a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#about">About</a>
+      <a href="#insights">Insights</a>
+      <a href="#contact" class="nav-cta">Begin a Conversation</a>
+    </nav>
+    <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('.nav-links').style.display='flex';this.style.display='none'">☰</button>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="cities">New York</div>
+    <h1>Financial Power
+      <span class="sub">Beyond the Canvas</span>
+    </h1>
+    <div class="diamond">◆</div>
+    <p class="lede">Independent financial and strategic advisory for the business of art — serving galleries, collectors, and cultural enterprises with the discretion and rigor the art world expects.</p>
+    <p class="lede small">We help art enterprises raise capital, structure transactions, and manage collections as the serious assets they are.</p>
+    <div class="cta-row">
+      <a href="#contact" class="btn btn-primary">Begin a Conversation</a>
+      <a href="#approach" class="btn btn-ghost">How We Work →</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;margin-top:-1px">
+  <div class="wrap">
+    <div class="pillars">
+      <div class="pillar">
+        <h3>Discretion</h3>
+        <p>Sensitive transactions and collections demand confidentiality. We operate with the privacy standards expected of trusted advisors to the art world.</p>
+      </div>
+      <div class="pillar">
+        <h3>Independence</h3>
+        <p>We are an independent advisory firm with no proprietary products to sell. Our counsel is aligned with your interests — and only yours.</p>
+      </div>
+      <div class="pillar">
+        <h3>Expertise</h3>
+        <p>We pair financial discipline with genuine fluency in the art market, bridging two worlds that rarely speak the same language.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">What We Do</span>
+      <h2>Advisory for Every Stage of an Art Enterprise</h2>
+      <p>Investment-banking discipline and collection expertise, tailored to the art and cultural sectors.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc"><div class="num">I</div><h3>Art M&amp;A Advisory</h3><p>Guidance for galleries, auction houses, and art-adjacent businesses through mergers, acquisitions, and strategic partnerships.</p></div>
+      <div class="svc"><div class="num">II</div><h3>Capital Raising</h3><p>Capital formation through private placements, debt financing, and equity offerings structured for art enterprises.</p></div>
+      <div class="svc"><div class="num">III</div><h3>Gallery &amp; Cultural Finance</h3><p>Financial solutions for gallery expansion, exhibitions, and cultural infrastructure, drawing on both private and institutional capital.</p></div>
+      <div class="svc"><div class="num">IV</div><h3>Collection Advisory</h3><p>Acquisition support, valuation analysis, estate planning, and monetization strategy for serious collections.</p></div>
+      <div class="svc"><div class="num">V</div><h3>Art-Secured Lending</h3><p>Access to liquidity against fine-art collateral, structured to preserve ownership and optionality.</p></div>
+      <div class="svc"><div class="num">VI</div><h3>Collector Wealth Strategy</h3><p>Portfolio diversification, succession planning, and generational transfer for collectors holding art as an asset class.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="approach">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Our Approach</span>
+      <h2>How We Work</h2>
+      <p>A deliberate, four-stage engagement built around your objectives — not a product to be sold.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><h3>Listen</h3><p>A confidential conversation to understand your objectives, constraints, and timeline.</p></div>
+      <div class="step"><div class="n">02</div><h3>Assess</h3><p>Independent analysis of your position, the relevant market, and viable structures.</p></div>
+      <div class="step"><div class="n">03</div><h3>Structure</h3><p>A tailored strategy and the introductions or transaction architecture to execute it.</p></div>
+      <div class="step"><div class="n">04</div><h3>Steward</h3><p>Ongoing counsel as circumstances evolve — a relationship, not a single transaction.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="serve">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Who We Serve</span>
+      <h2>Clients at the Intersection of Art and Capital</h2>
+    </div>
+    <div class="serve-grid">
+      <div class="serve"><h3>Galleries &amp; Dealers</h3><p>Owners navigating growth, succession, partnership, or sale who need financial counsel that understands their business.</p></div>
+      <div class="serve"><h3>Collectors &amp; Families</h3><p>Private collectors and family offices treating art as a meaningful component of long-term wealth.</p></div>
+      <div class="serve"><h3>Cultural Enterprises</h3><p>Foundations, art-tech ventures, and cultural businesses seeking capital, structure, or strategic direction.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="about">
+  <div class="wrap">
+    <div class="about">
+      <div>
+        <span class="eyebrow">About Bo Arts LLC</span>
+        <h2>Custodians of Cultural Continuity</h2>
+        <p>The Bank of Arts is the advisory practice of Bo Arts LLC, an independent firm dedicated to the business of art. We exist because the art world and the financial world rarely speak the same language — and the cost of that gap falls on galleries, collectors, and the institutions that preserve our shared cultural legacy.</p>
+        <p>We bring financial discipline to cultural assets while honoring what makes them more than assets. Every engagement is led personally by a principal, held in confidence, and measured by your outcomes.</p>
+        <p>Engagements are led by senior advisory principals with finance, art-market, and transaction experience.</p>
+        <div class="stats">
+          <div class="stat"><div class="big">Independent</div><div class="lbl">No proprietary products</div></div>
+          <div class="stat"><div class="big">Confidential</div><div class="lbl">Discretion by default</div></div>
+        </div>
+      </div>
+      <div>
+        <img src="https://thebankofarts.com/assets/art/02-modern-gallery.webp" alt="A modern gallery interior" style="width:100%;border-radius:4px;border:1px solid var(--line)" onerror="this.style.display='none'" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="insights">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Insights</span>
+      <h2>Perspectives on Cultural Finance</h2>
+      <p>Considered analysis on the markets, structures, and ideas shaping the business of art.</p>
+    </div>
+    <div class="insights-grid">
+      <div class="post"><span class="tag">Market Perspective</span><h3>The Renaissance of Cultural Finance</h3><p>As institutional investors increasingly treat art as a legitimate asset class, a more sophisticated financial architecture is taking shape.</p><div class="meta">Bo Arts LLC · October 2025</div></div>
+      <div class="post"><span class="tag">Industry Analysis</span><h3>Digital Rights in the Museum Economy</h3><p>The digital transformation of cultural institutions opens new avenues for revenue and audience engagement.</p><div class="meta">Bo Arts LLC · September 2025</div></div>
+      <div class="post"><span class="tag">Thought Leadership</span><h3>Endowment Structures for the 21st Century</h3><p>Traditional endowment models need to evolve for cultural enterprises navigating volatile markets.</p><div class="meta">Bo Arts LLC · August 2025</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="wrap" style="max-width:880px">
+    <div class="section-head">
+      <span class="eyebrow">Frequently Asked</span>
+      <h2>Clarity, Up Front</h2>
+    </div>
+    <details><summary>Are you a bank?</summary><p>No. The Bank of Arts is a brand of Bo Arts LLC, an independent advisory firm. We are not a bank or depository institution, and we do not accept deposits. The name reflects our discipline and discretion, not a banking license.</p></details>
+    <details><summary>Are you registered or regulated?</summary><p>Investment advisory and securities services, where applicable, are provided through affiliated registered advisers and broker-dealer partners (FINRA/SIPC). General advisory and strategic services are provided directly by Bo Arts LLC. We are glad to clarify which capacity applies to your engagement.</p></details>
+    <details><summary>Who do you typically work with?</summary><p>Galleries and dealers, private collectors and family offices, and cultural enterprises — generally where art and meaningful capital intersect.</p></details>
+    <details><summary>How do engagements begin?</summary><p>With a confidential conversation. From there we propose a scope, terms, and approach tailored to your objectives before any work begins.</p></details>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <span class="eyebrow">Begin a Conversation</span>
+        <h2>Speak With an Advisor</h2>
+        <p>We invite galleries, collectors, and cultural enterprises to explore how independent advisory can serve your objectives. Every inquiry is held in confidence.</p>
+        <p style="margin-top:20px"><strong class="gold">Email</strong><br>advisory@thebankofarts.com</p>
+        <p><strong class="gold">Office</strong><br>Bo Arts LLC · 99 Wall Street, New York, NY 10005</p>
+        <div class="offices">
+          <span>New York</span>
+        </div>
+      </div>
+      <div>
+        <form onsubmit="event.preventDefault();this.querySelector('.formnote').style.display='block';">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+          <label for="type">I am a…</label>
+          <select id="type" name="type">
+            <option>Gallery or dealer</option>
+            <option>Collector or family office</option>
+            <option>Cultural enterprise / foundation</option>
+            <option>Other</option>
+          </select>
+          <label for="msg">How can we help?</label>
+          <textarea id="msg" name="msg" rows="4"></textarea>
+          <button class="btn btn-primary" style="margin-top:22px;width:100%" type="submit">Request a Conversation</button>
+          <p class="formnote" style="display:none;color:var(--gold);margin-top:14px;font-size:.9rem">Thank you — connect this form to your inbox or CRM to receive submissions.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#top" class="brand" style="margin-bottom:14px"><span class="mark"></span> The Bank of Arts™</a>
+        <p style="margin-top:12px;max-width:340px">Independent financial and strategic advisory for the business of art. A brand of Bo Arts LLC.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#about">About</a>
+        <a href="#insights">Insights</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Bo Arts LLC</p>
+        <p>99 Wall Street</p>
+        <p>New York, NY 10005</p>
+        <a href="mailto:advisory@thebankofarts.com">advisory@thebankofarts.com</a>
+      </div>
+    </div>
+    <div class="legal">
+      <strong style="color:var(--gold-bright)">Legal Notice.</strong> THE BANK OF ARTS™ is a pending service mark of Bo Arts LLC. Bo Arts LLC is not a bank or depository institution and does not accept deposits. The content of this site is informational only and is not an offer, solicitation, or recommendation to buy or sell any security or to engage any service. Investment advisory and securities services, where applicable, are provided through affiliated registered advisers and broker-dealer partners (FINRA/SIPC). All other names, marks, and logos are the property of their respective owners and are referenced for descriptive purposes only; no endorsement or affiliation is implied.
+    </div>
+    <div class="copyright">
+      <span>© 2026 Bo Arts LLC. All rights reserved.</span>
+      <span><a href="/privacy" style="display:inline">Privacy Policy</a> · <a href="/terms" style="display:inline">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
