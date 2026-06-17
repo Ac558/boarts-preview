@@ -15,6 +15,6 @@
     var g=function(id){var el=document.getElementById(id);return el?el.value:'';};
     var subject='Website inquiry from '+g('name');
     var body='Name: '+g('name')+'\r\nEmail: '+g('email')+'\r\nType: '+g('type')+'\r\n\r\n'+g('msg');
-    window.location.href='mailto:advisory@thebankofarts.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    window.location.href='mailto:partners@tboarts.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
   });}
 })();
