@@ -247,3 +247,49 @@ footer .col a:hover{color:var(--gold)}
   .step,.serve,.stat{border-left:0;padding-left:0;border-top:1px solid var(--line)}
   .step:first-child,.serve:first-child,.stat:first-child{border-top:0}
 }
+
+/* ===== SUB-PAGE POLISH ===== */
+/* shared page-hero */
+.page-hero .label:after{content:"";display:block;width:34px;height:2px;background:var(--gold);margin-top:18px}
+.page-hero h1{max-width:16ch}
+.page-hero p{max-width:46ch}
+@media(max-width:760px){.page-hero{padding:64px 0 48px}}
+
+/* footer hover polish */
+footer .col a{transition:color .25s var(--ease)}
+.copy{align-items:center}
+
+/* services: ghost numeral + hover */
+.svc-detail{grid-template-columns:.7fr 1.3fr;align-items:start;transition:background .35s var(--ease),padding .35s var(--ease)}
+.svc-detail:hover{background:var(--surface);padding-left:16px;padding-right:16px}
+.svc-detail .no{font-family:var(--disp);font-weight:500;font-size:clamp(2rem,3.4vw,3rem);line-height:1;color:rgba(168,132,63,.30);margin-bottom:0}
+.svc-detail h3{margin-top:12px}
+@media(max-width:760px){.svc-detail:hover{padding-left:0;padding-right:0}}
+
+/* about: split media zoom + principle hover */
+.split .media img{transition:transform 1.2s var(--ease)}
+.split:hover .media img{transform:scale(1.04)}
+.serve{transition:background .35s var(--ease)}
+.serve:hover{background:var(--surface)}
+.serve h3{position:relative;padding-bottom:14px}
+.serve h3:after{content:"";position:absolute;left:0;bottom:0;width:24px;height:2px;background:var(--gold);opacity:0;transition:opacity .35s var(--ease)}
+.serve:hover h3:after{opacity:1}
+
+/* contact: form panel + focus ring */
+.form-grid{gap:56px;align-items:start}
+.form-grid form{background:var(--surface);border:1px solid var(--line);padding:36px}
+input,textarea,select{padding:15px 16px}
+input:focus,textarea:focus,select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(168,132,63,.14)}
+.contact-info p a:hover{color:var(--gold)}
+@media(max-width:760px){.form-grid form{padding:24px}}
+
+/* disclosures: numbered sections + measure */
+.prose{max-width:760px;counter-reset:disc}
+.prose h2{counter-increment:disc;display:flex;gap:14px;align-items:baseline;margin-top:34px;padding-top:26px;border-top:1px solid var(--line-2)}
+.prose h2:before{content:counter(disc,decimal-leading-zero);font-family:var(--mono);font-size:.6em;letter-spacing:.06em;color:var(--gold)}
+.prose h2:first-of-type{margin-top:0;padding-top:0;border-top:0}
+
+/* insights: drop cap + measure + quote */
+.article{max-width:720px}
+.article .article-figure + p:first-letter{font-family:var(--disp);font-weight:500;color:var(--gold);font-size:3.4em;line-height:.78;float:left;margin:6px 14px 0 0}
+.article blockquote{font-size:1.55rem;padding-left:28px;margin:36px 0}
