@@ -60,7 +60,7 @@ img{display:block;max-width:100%}
 .hero-actions{display:flex;flex-direction:column;gap:16px;align-items:flex-start}
 .hero-actions-row{flex-direction:row;flex-wrap:wrap;gap:14px}
 .hero-full{position:relative;min-height:clamp(560px,76vh,820px);display:flex;align-items:center;overflow:hidden;border-bottom:1px solid var(--line);background:linear-gradient(135deg,#0b1a2e,#16263c)}
-.hero-full__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:72% center;z-index:0;filter:saturate(.94) contrast(1.04)}
+.hero-full__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:74% center;z-index:0;filter:saturate(.94) contrast(1.04)}
 .hero-full:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(5,10,18,.94) 0%,rgba(6,12,22,.82) 32%,rgba(8,14,22,.42) 58%,rgba(8,14,22,.08) 84%,rgba(8,14,22,0) 100%)}
 .hero-full:after{content:"";position:absolute;left:0;right:0;bottom:0;height:48%;z-index:1;background:linear-gradient(180deg,rgba(8,14,22,0) 0%,rgba(8,14,22,.46) 100%);pointer-events:none}
 .hero-full .wrap{position:relative;z-index:2;width:100%}
@@ -86,19 +86,19 @@ img{display:block;max-width:100%}
 
 /* image band */
 .band{padding:0}
-.band-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:2px;height:46vh;min-height:360px}
+.band-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:2px;height:38vh;min-height:320px}
 .band-grid figure{overflow:hidden;background:linear-gradient(135deg,#e7e4dc,#d8d4ca);position:relative}
 .band-grid figure:nth-child(1){grid-column:span 5}
 .band-grid figure:nth-child(2){grid-column:span 4}
 .band-grid figure:nth-child(3){grid-column:span 3}
-.band-grid img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease);filter:saturate(.9) contrast(1.03)}
+.band-grid img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease);filter:saturate(.9) brightness(.93) contrast(1.04)}
 .band-grid figure:hover img{transform:scale(1.05)}
 .image-break{padding:0}
 .image-break figure{height:52vh;min-height:360px;overflow:hidden;background:linear-gradient(135deg,#e7e4dc,#d8d4ca)}
 .image-break img{width:100%;height:100%;object-fit:cover;filter:saturate(.92)}
 
 /* sections */
-.sec{padding:108px 0}
+.sec{padding:104px 0}
 .sec-sm{padding:88px 0}
 .sec-head{display:grid;grid-template-columns:repeat(12,1fr);gap:48px;align-items:baseline;margin-bottom:72px}
 .sec-head .ix{grid-column:span 3}
@@ -158,7 +158,7 @@ img{display:block;max-width:100%}
 
 /* feature dark */
 .feature{background:var(--navy);color:#eef1f5}
-.feature .wrap{padding-top:130px;padding-bottom:130px}
+.feature .wrap{padding-top:108px;padding-bottom:108px}
 .feature .label{color:rgba(238,241,245,.55)}
 .feature-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:60px;align-items:end;margin-top:40px}
 .feature h2{font-family:var(--disp);font-weight:400;letter-spacing:-.025em;line-height:1.08;font-size:clamp(1.9rem,4vw,3.2rem)}
@@ -222,8 +222,8 @@ footer .col a:hover{color:var(--gold)}
   .menu.open{display:flex;flex-direction:column;align-items:flex-start;position:absolute;top:74px;right:0;background:var(--surface);border:1px solid var(--line);padding:22px;gap:18px;min-width:200px}
   .burger{display:block}
   .hero{padding:48px 0 40px}
-  .hero-full{min-height:82vh;align-items:end}
-  .hero-full__img{object-position:72% center}
+  .hero-full{min-height:74vh;align-items:end}
+  .hero-full__img{object-position:74% center}
   .hero-full:before{background:linear-gradient(180deg,rgba(8,14,22,.28) 0%,rgba(8,14,22,.82) 82%,rgba(8,14,22,.9) 100%)}
   .hero-full__inner{max-width:none;padding:80px 0 42px}
   .hero-full__meta{display:grid;gap:9px;margin-bottom:20px}
@@ -239,7 +239,7 @@ footer .col a:hover{color:var(--gold)}
   .sec-head h2{grid-column:span 12}
   .band-grid{height:auto;min-height:0;grid-template-columns:repeat(12,1fr)}
   .band-grid figure:first-child{grid-column:1 / -1!important}
-  .band-grid figure{grid-column:span 6!important;height:42vw}
+  .band-grid figure{grid-column:span 6!important;height:40vw}
   .image-break figure,.feature-media{height:56vw;min-height:260px}
   .svc-row{grid-template-columns:44px 1fr 28px;row-gap:8px}
   .svc-row p{grid-column:1 / -1;order:3}
