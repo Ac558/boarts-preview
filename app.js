@@ -1,4 +1,4 @@
-/* The Bank of Arts — staging interactions: scroll reveal + mobile menu */
+/* The Bank of Arts - staging interactions: scroll reveal + mobile menu */
 (function(){
   var els=document.querySelectorAll('.reveal');
   if('IntersectionObserver' in window){
