@@ -2,13 +2,19 @@
 (function(){
   var els=document.querySelectorAll('.reveal');
   if('IntersectionObserver' in window){
+    document.documentElement.classList.add('reveal-armed');
+    var showAll=function(){els.forEach(function(e){e.classList.add('in');});};
     var io=new IntersectionObserver(function(ents){
       ents.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
     },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
     els.forEach(function(e,i){e.style.transitionDelay=Math.min(i%6*60,300)+'ms';io.observe(e);});
+    document.querySelectorAll('.hero-full .reveal').forEach(function(e){e.classList.add('in');});
+    setTimeout(showAll,1400);
   } else { els.forEach(function(e){e.classList.add('in');}); }
+
   var b=document.querySelector('.burger'), m=document.querySelector('.menu');
   if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open');});}
+
   var form=document.getElementById('contactForm');
   if(form){form.addEventListener('submit',function(e){
     e.preventDefault();
