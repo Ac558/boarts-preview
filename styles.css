@@ -93,6 +93,18 @@ img{display:block;max-width:100%}
 .band-grid figure:nth-child(3){grid-column:span 3}
 .band-grid img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease);filter:saturate(.9) brightness(.93) contrast(1.04)}
 .band-grid figure:hover img{transform:scale(1.05)}
+
+/* statement band */
+.statement-band{position:relative;background:var(--navy);color:#eef1f5;border-top:1px solid rgba(238,241,245,.1);border-bottom:1px solid rgba(238,241,245,.12);overflow:hidden}
+.statement-band:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 82% 22%,rgba(168,132,63,.16),transparent 28%),linear-gradient(180deg,rgba(255,255,255,.035),transparent 42%);opacity:.9}
+.statement-grid{position:relative;display:grid;grid-template-columns:1.35fr .65fr;gap:72px;align-items:center;padding:88px var(--mx)}
+.statement-copy{max-width:850px}
+.statement-copy .label{color:rgba(238,241,245,.58)}
+.statement-copy h2{margin-top:24px;font-family:var(--disp);font-weight:500;letter-spacing:-.035em;line-height:1;font-size:clamp(2.45rem,5.6vw,5.25rem);text-wrap:balance}
+.statement-copy h2 em{font-style:normal;color:#dcb877}
+.statement-media{height:360px;min-height:0;border:1px solid rgba(238,241,245,.16);overflow:hidden;background:rgba(238,241,245,.04);transform:translateY(34px)}
+.statement-media img{width:100%;height:100%;object-fit:cover;filter:saturate(.86) brightness(.82) contrast(1.08);transition:transform 1.2s var(--ease)}
+.statement-media:hover img{transform:scale(1.04)}
 .image-break{padding:0}
 .image-break figure{height:52vh;min-height:360px;overflow:hidden;background:linear-gradient(135deg,#e7e4dc,#d8d4ca)}
 .image-break img{width:100%;height:100%;object-fit:cover;filter:saturate(.92)}
@@ -237,6 +249,9 @@ footer .col a:hover{color:var(--gold)}
   .sec-head{gap:20px;margin-bottom:48px}
   .sec-head .ix{grid-column:span 12}
   .sec-head h2{grid-column:span 12}
+  .statement-grid{grid-template-columns:1fr;gap:34px;padding:70px var(--mx)}
+  .statement-copy h2{font-size:clamp(2rem,9.4vw,3rem);letter-spacing:-.025em;line-height:1.04}
+  .statement-media{height:54vw;min-height:220px;transform:none}
   .band-grid{height:auto;min-height:0;grid-template-columns:repeat(12,1fr)}
   .band-grid figure:first-child{grid-column:1 / -1!important}
   .band-grid figure{grid-column:span 6!important;height:40vw}
