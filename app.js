@@ -13,7 +13,17 @@
   } else { els.forEach(function(e){e.classList.add('in');}); }
 
   var b=document.querySelector('.burger'), m=document.querySelector('.menu');
-  if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open');});}
+  if(b&&m){
+    var setMenu=function(open){
+      m.classList.toggle('open',open);
+      b.setAttribute('aria-expanded',open?'true':'false');
+      b.setAttribute('aria-label',open?'Close menu':'Open menu');
+    };
+    b.addEventListener('click',function(e){e.stopPropagation();setMenu(!m.classList.contains('open'));});
+    m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setMenu(false);});});
+    document.addEventListener('click',function(e){if(m.classList.contains('open')&&!m.contains(e.target)&&e.target!==b){setMenu(false);}});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.classList.contains('open')){setMenu(false);b.focus();}});
+  }
 
   var form=document.getElementById('contactForm');
   if(form){form.addEventListener('submit',function(e){
